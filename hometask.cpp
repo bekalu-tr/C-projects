@@ -54,7 +54,7 @@ int main() {
     cout << "Enter Your Basic Salary: ";
     cin >> b;
 
-    cout << "Enter Your Bonus: ";
+    cout << "Enter Your Bonus:";
     cin >> bo;
 
     info.setSalary(b, bo);
