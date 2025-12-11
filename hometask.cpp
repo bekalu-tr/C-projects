@@ -38,7 +38,7 @@ public:
 
     void displayInfo() {
         cout << "\n===== Employee Information =====" << endl;
-        cout << "Name: " << lname + lname<< endl;
+        cout << "Name: " << fname + lname<< endl;
         cout << "Employee ID: " << empID << endl;
         cout << "Gender: " << gender << endl;
         cout << "Basic Salary: " << basicSalary << endl;
