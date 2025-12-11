@@ -4,9 +4,10 @@ using namespace std;
 
 class Employee {
 public:
-    string name;
+    string fname;
+     string lname;
     string empID;
-    string gender;
+    char gender;
 
 private:
     float basicSalary;
@@ -14,14 +15,16 @@ private:
 
 public:
     void inputInfo() {
-        cout << "Enter Your Name: ";
-        getline(cin, name);
+        cout << "Enter Your First Name: ";
+        cin>>fname;
+ cout << "Enter Your Last Name: ";
+        cin>>lname;
 
         cout << "Enter Your ID: ";
-        getline(cin, empID);
+        cin>>empID;
 
         cout << "Enter Your Gender: ";
-        getline(cin, gender);
+        cin>>gender;
     }
 
     void setSalary(float b, float bo) {
@@ -35,7 +38,7 @@ public:
 
     void displayInfo() {
         cout << "\n===== Employee Information =====" << endl;
-        cout << "Name: " << name << endl;
+        cout << "Name: " << lname + lname<< endl;
         cout << "Employee ID: " << empID << endl;
         cout << "Gender: " << gender << endl;
         cout << "Basic Salary: " << basicSalary << endl;
@@ -49,15 +52,15 @@ int main() {
 
     info.inputInfo();
 
-    float b, bo;
+    float A, B;
 
     cout << "Enter Your Basic Salary: ";
-    cin >> b;
+    cin >>A ;
 
     cout << "Enter Your Bonus:";
-    cin >> bo;
+    cin >>B;
 
-    info.setSalary(b, bo);
+    info.setSalary(A, B);
 
     info.displayInfo();
 
